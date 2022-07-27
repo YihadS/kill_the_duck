@@ -45,7 +45,7 @@ body, html{
 	top: 50px;
 	left: 20px;
 	position: absolute;
-	background: url('../img/duck.png');
+	background: url('../img/duck.gif');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
