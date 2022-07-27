@@ -1,5 +1,5 @@
 /* global $ */
-import Keyframes from './@keyframes/core';
+import Keyframes from '/@keyframes/core';
 
 (($) => {
     const doForEach = ($el, cb) => {
