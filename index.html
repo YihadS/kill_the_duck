@@ -46,5 +46,27 @@
  crossorigin="anonymous"></script>
  <script type="module" src="js/jquery_keyframes.js"></script>
 <script src="js/function.js"></script>
+	<script>
+	$.keyframe.define([{
+  name: 'ball-move',
+  '0%': {
+    'margin-left': '0px'
+  },
+  '50%': {
+    'margin-left': '600px'
+  },
+  '100%': {
+    'margin-left': '0px'
+  }
+}, {
+  name: 'ball-spin',
+  from: {
+    'transform': 'rotate(90deg)'
+  },
+  to: {
+    'transform': 'rotate(450deg)'
+  }
+}]);
+	</script>
 </body>
 </html>
