@@ -1,3 +1,12 @@
+:root {
+    --top1: 20px;
+    --left1: 50px;
+    --top2: 20px;
+    --left2: 50px;
+    --top3: 20px;
+    --left3: 50px;
+}
+
 *{
 	margin: 0;
 	box-sizing: border-box;
@@ -33,9 +42,9 @@ body, html{
 .duck{
 	height: 50px;
 	width: 50px;
+	top: 50px;
+	left: 20px;
 	position: absolute;
-	top: 20px;
-	left: 50px;
 	background: url('../img/duck.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -100,29 +109,19 @@ body, html{
 	left: 50px;
 }
 
-15%{
-	top: 250px;
-	left: 250px;
+25%{
+	top: var(--top1);
+	left: var(--left1);
 }
 
-35%{
-	top: 500;
-	left: 500px;
-}
-
-55%{
-	top: 250px;
-	left: 750px;
+50%{
+	top: var(--top2);
+	left: var(--left2);
 }
 
 75%{
-	top: 150px;
-	left: 900px;	
-}
-
-90%{
-	top: 70px;
-	left: 450px;
+	top: var(--top3);
+	left: var(--left3);
 }
 
 100%{
@@ -160,5 +159,3 @@ body, html{
 .win, .lose{
 	display: none;
 }
-
-
