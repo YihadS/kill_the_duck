@@ -1,5 +1,6 @@
 var duck = document.querySelector('.duck');
 var sun = document.querySelector('.sun');
+var dog = document.querySelector('.dog');
 var sky = document.querySelector('.sky');
 var divider = document.querySelector('.shape-fill');
 var gunshot_mp3 = document.getElementById('gunshot_mp3');
@@ -15,6 +16,7 @@ var lost = setInterval(function(){
 if(!document.getElementById("b1") ){
 lose.style.display="block";
 dog_mp3.play();
+dog.style.bottom = "0";
 }},1);
 
 var random = setInterval(function(){
