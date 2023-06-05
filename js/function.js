@@ -10,12 +10,20 @@ var win = document.querySelector('.win');
 var lose = document.querySelector('.lose');
 var bullets= document.querySelector('.bullets');
 var root = document.querySelector(':root');
+var isDogSoundPlaying = false;
 
 /*Funciones listas para ejecutarse (Cuando se acaban las balas y perdemos)*/
 var lost = setInterval(function(){
 if(!document.getElementById("b1") ){
 lose.style.display="block";
-dog_mp3.play();
+if (!isDogSoundPlaying) {
+    dog_mp3.play();
+    isDogSoundPlaying = true;
+    dog_mp3.addEventListener('ended', function() {
+      isDogSoundPlaying = false;
+    });
+  }
+
 dog.style.bottom = "0";
 }},1);
 

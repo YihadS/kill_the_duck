@@ -56,8 +56,8 @@ body, html{
 .dog{
 	height: 80px;
 	width: 80px;
-	bottom: -60px;
-	left: 50%;
+	bottom: -90px;
+	left: 45%;
 	position: absolute;
 	background: url('../img/dog_nobg.gif');
 	background-position: center;
