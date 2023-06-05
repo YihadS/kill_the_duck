@@ -13,19 +13,24 @@ var root = document.querySelector(':root');
 var isDogSoundPlaying = false;
 
 /*Funciones listas para ejecutarse (Cuando se acaban las balas y perdemos)*/
-var lost = setInterval(function(){
-if(!document.getElementById("b1") ){
-lose.style.display="block";
-if (!isDogSoundPlaying) {
-    dog_mp3.play();
-    isDogSoundPlaying = true;
-    dog_mp3.addEventListener('ended', function() {
-      isDogSoundPlaying = false;
-    });
+function handleGameLoss() {
+    if (!document.getElementById("b1")) {
+      clearInterval(lost); // Limpia el intervalo para que no se repita el sonido del perro
+      lose.style.display = "block";
+      if (!isDogSoundPlaying) {
+        dog_mp3.play();
+        isDogSoundPlaying = true;
+        dog_mp3.addEventListener('ended', function() {
+          isDogSoundPlaying = false;
+        });
+      }
+      dog.style.bottom = "0";
+    }
   }
+  handleGameLoss();
 
-dog.style.bottom = "0";
-}},1);
+var lost = setInterval(handleGameLoss, 1);
+/**/
 
 var random = setInterval(function(){
 keyframe();
