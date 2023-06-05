@@ -53,6 +53,18 @@ body, html{
 	cursor:url('../img/scope.png'), auto;
 }
 
+.dog{
+	height: 50px;
+	width: 50px;
+	bottom: 0p;
+	left: 50%;
+	position: absolute;
+	background: url('../img/dog_nobg.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 .sun{
 	height: 50px;
 	width: 50px;

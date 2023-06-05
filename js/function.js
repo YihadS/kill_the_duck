@@ -4,15 +4,17 @@ var sky = document.querySelector('.sky');
 var divider = document.querySelector('.shape-fill');
 var gunshot_mp3 = document.getElementById('gunshot_mp3');
 var duck_mp3 = document.getElementById('duck_mp3');
+var dog_mp3 = document.getElementById('dog_mp3');
 var win = document.querySelector('.win');
 var lose = document.querySelector('.lose');
 var bullets= document.querySelector('.bullets');
 var root = document.querySelector(':root');
 
-/*Funciones listas para ejecutarse*/
+/*Funciones listas para ejecutarse (Cuando se acaban las balas y perdemos)*/
 var lost = setInterval(function(){
 if(!document.getElementById("b1") ){
 lose.style.display="block";
+dog_mp3.play();
 }},1);
 
 var random = setInterval(function(){
