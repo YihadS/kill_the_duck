@@ -49,7 +49,7 @@ body, html{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	animation: fly linear infinite 10s;
+	animation: fly linear infinite 8s;
 	cursor:url('../img/scope.png'), auto;
 }
 
